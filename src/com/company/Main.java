@@ -6,24 +6,27 @@ abstract class Animal {
      */
 
     public String name;
+    public String family;
     public abstract void getName();
 }
 
 class Squirrel extends Animal {
     public String name = "Fox";
+    public String family = "Squirrel";
 
     @Override
     public void getName() {
-        System.out.println("Squirrel " + name);
+        System.out.println(family + " " + name);
     }
 }
 
 class Chipmunk extends Animal {
     public String name = "Nox";
+    public String family = "Chipmunk";
 
     @Override
     public void getName() {
-        System.out.println("Chipmunk " + name);
+        System.out.println(family + " " + name);
     }
 }
 
